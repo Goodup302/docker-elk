@@ -1,0 +1,20 @@
+#output.elasticsearch:
+#  hosts: ["http://elasticsearch:9200"]
+#  username: "elastic"
+#  password: "changeme"
+
+setup.kibana:
+  host: "kibana:5601"
+#  username: "elastic"
+#  password: "changeme"
+
+output.logstash:
+  hosts: ["logstash:5044"]
+#  username: "elastic"
+#  password: "changeme"
+
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/nginx/*.log
