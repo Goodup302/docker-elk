@@ -3,6 +3,7 @@
 #  username: "elastic"
 #  password: "changeme"
 
+#For load dashboard
 setup.kibana:
   host: "kibana:5601"
 #  username: "elastic"
